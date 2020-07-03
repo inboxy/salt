@@ -1,6 +1,7 @@
 install_apache:
-  pkg.installed:
+  pkg.latest:
     - name: apache2
+    - name: sqlite3
 
 make sure apache is running:
   service.running:
@@ -8,3 +9,4 @@ make sure apache is running:
   - enable: True
   - requrie:
     - pkg: install_apache
+
