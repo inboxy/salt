@@ -5,4 +5,4 @@ install_apache:
 make sure apache is running:
     service.running:
         - name: apache2
-        - enable: true
+        - enable: True
